@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="lib" path="C:/Users/diurno/Desktop/apache-tomcat-10.0.27/lib/servlet-api.jar">
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+=======
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-20">
+>>>>>>> main
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8345276cca6b508b2de2d5f0caf7e06bf8bb2739
+=======
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+=======
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-19"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v10.0">
+=======
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/apache-tomcat-10.0.27">
+>>>>>>> 8345276cca6b508b2de2d5f0caf7e06bf8bb2739
+=======
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/apache-tomcat-10.0.27">
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+=======
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/apache-tomcat-10.0.27">
+>>>>>>> 7fd529ed51271a52f4b62b133818b5d7448a62ed
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
