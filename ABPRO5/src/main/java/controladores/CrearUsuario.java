@@ -13,36 +13,25 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import dao.CapacitacionDAO;
-import dao.UsuarioDAO;
-import idao.CapacitacionDaoImpl;
-import idao.UsuarioDaoImpl;
+import implementacion.CapacitacionDaoImpl;
+import implementacion.UsuarioDaoImpl;
+import interfaces.CapacitacionDAO;
+import interfaces.UsuarioDAO;
 
-/**
- * Servlet implementation class CrearUsuario
- */
+
 public class CrearUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public CrearUsuario() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Usuario user = setUsuario(request);
 		try {
@@ -66,6 +55,7 @@ public class CrearUsuario extends HttpServlet {
 		String password = request.getParameter("password");
 		String fechaNac = request.getParameter("fechaNac");
 		String run = request.getParameter("run");
+		String perfil = request.getParameter("tipo");
 		if(idUser == null||userName ==null|| password==null||fechaNac==null||run==null) {
 			System.out.println("formulario con campos vacio");	
 		} else {
@@ -76,6 +66,7 @@ public class CrearUsuario extends HttpServlet {
 				user.setPassword(password);
 				user.setfNacimiento(getDate(fechaNac));
 				user.setRun(Integer.parseInt(run));
+				user.setPerfil(perfil);
 			} catch (NumberFormatException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -83,7 +74,7 @@ public class CrearUsuario extends HttpServlet {
 
 
 		}
-		return null;
+		return user;
 	}
 	
 	private Date getDate(String fecha) {
